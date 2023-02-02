@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+
+}
+
+header{
+    display: grid;
+
+    grid-template-columns: 50% 50%;
+}
+
+header > div {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header > div > div {
+    width: 200px;
+    margin: 20px;
+
+}
+
+header > div > div:nth-child(1){
+    background-color: blue;
+
+    box-shadow: 0 0 5px 0px red ;
+
+}
+
+header > div > div:nth-child(2){
+    background-color: blue;
+
+    box-shadow: 5px 5px 0 0 #289FED,
+    10px 10px 0 0 #5FB8FF,
+    15px 15px 0 0 #A1D8FF,
+    20px 20px 0 0 #CAE6FF,
+    25px 25px 0 0 #E1EEFF,
+    5px 5px 15px 5px rgba(0,0,0,0);
+
+
+}
+
+main{
+    display: grid;
+
+    grid-template-columns: auto 250px auto;
+
+}
+
+
+main > div:nth-child(2) {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+main > div:nth-child(2) > div {
+
+    width: 100px;
+
+}
+
+
+main > div:nth-child(2) > div:nth-child(1) {
+
+    text-shadow: 0 0 2px 0 red ;
+
+}
+
+main > div:nth-child(2) > div:nth-child(2) {
+
+    text-shadow: 0 2px 5px 0 blue;
+
+}
+
+
+
+
+
+
+

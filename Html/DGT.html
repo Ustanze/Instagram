@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CAMBIO DE TITULARIDAD</title>
+</head>
+<body>
+    <form method="post">
+
+        <h3>CANVI DE TITULARITAT I NOTIFICACIÓ DE VENDA DE VEHICLES</h3>
+
+            <label for="cambio">CANVI DE TITULARITAT </label>
+            <input id="cambio" type="radio" name="cambio o notificacion" value="cambio">
+            <label for="notificacion">NOTIFICACIÓ DE VENDA</label>
+            <input  id="notificacion" type="radio" name="cambio o notificacion" value="notificacion">
+
+         <h4>DADES DEL VEHICLE</h4>
+
+            <label for="matricula">Matricula:</label>
+            <input id="matricula" type="text" name="matricula">
+            <label for="fecha">Data de matriculació (dd/mm/aaaa):</label>
+            <input id="fecha" type="date" name="fecha">
+        <br>
+            <label for="servicio">Servei al qual destineu el vehicle</label>
+            <select id="servicio" name="servicio">
+                <option value="A-00">A-00 Publico Sin especificar</option>
+                <option value="A-01">A-01 Alquiler SIN conductor</option>
+                <option value="A-02">A-02 Alquiler CON conductor</option>
+                <option value="A-03">A-03 Aprendizaje conduccion</option>
+                <option value="A-04">A-04 Taxi</option>
+                <option value="A-05">A-05 Auxilio en carretera</option>
+                <option value="A-07">A-07 Ambulancia</option>
+                <option value="A-08">A-08 Funerario</option>
+                <option value="A-10">A-10 Mercancias peligrosas</option>
+                <option value="A-11">A-11 Basurero</option>
+                <option value="A-12">A-12 Transporter escolar</option>
+                <option value="A-13">A-13 Policia</option>
+                <option value="A-14">A-14 Bomberos</option>
+                <option value="A-15">A-15 Proteccion civil y salvamento</option>
+                <option value="A-16">A-16 Ministerio de defensa</option>
+                <option value="A-18">A-18 Actividad economica</option>
+                <option value="A-20">A-20 Mercancias perecederas</option>
+                <option value="B-00">B-00 PArticular Sin especificar</option>
+                <option value="B-06">B-06 Agricola</option>
+                <option value="B-09">B-09 Obras</option>
+                <option value="B-17">B-17 Vivienda</option>
+                <option value="B-18">B-18 Actividad economica</option>
+                <option value="B-19">B-19 Recreativo</option>
+                <option value="B-21">B-21 vehiculo de ferias</option>
+            </select>
+            <label for="codigo_cet">Codi CET (Codi Electrònic de Transferència)</label>
+            <input id="codigo_cet" type="text" name="codigo CET">
+            <label for="codigo_cema">Codi CEMA (Codi Electrònic de Maquinària Agrícola):</label>
+            <input id="codigo_cema" type="text" name="codigo CET">
+
+        <h4>NOU DOMICILI DEL VEHICLE (domicili d’empadronament del comprador del vehicle)</h4>
+
+            <label for="tipo_via">Tipus de via: </label>
+            <input id="tipo_via" type="text" name="nombre via">
+            <label for="nombre_via">Tipus de via: </label>
+            <input id="nombre_via" type="text" name="nombre via">
+            <label for="numero">Número:</label>
+            <input  id="numero" type="text">
+        <br>
+            <label for="bloque">Bloc</label>
+            <input id="bloque" type="text" name="Bloque">
+            <label for="portal">Portal</label>
+            <input id="portal" type="number" min="0" name="portal">
+            <label for="escala">Escala</label>
+            <input id="escala" type="text" name="escalera">
+            <label for="planta">Planta</label>
+            <input id="planta" type="number" min="0" name="planta">
+            <label for="porta">Porta</label>
+            <input id="porta" type="number" min="0" name="puerta">
+            <label for="km">KM</label>
+            <input id="km" type="number" min="0" name="KM">
+        <br>
+            <label for="codi_postal">Codi Postal</label>
+            <input id="codi_postal" type="text" name="codigo postal">
+            <label for="provincia">Provincia:</label>
+            <select id="provincia" name="provincia">
+                <option value="alb">Albacete</option>
+                <option value="ali">Alicante</option>
+                <option value="alm">Almeria</option>
+            </select>
+            <label for="municipi">Municipi:</label>
+            <input id="municipi" type="text" name="municipio" >
+            <label for="localitat">Localitat:</label>
+            <input id="localitat" type="text" name="localidad" >
+
+        <h4>DADES DEL COMPRADOR/ADQUIRENT</h4>
+
+            <label for="persona_interesada">Persona interessada</label>
+            <input id="persona_interesada" type="radio" name="Persona interessada o compravenda" value="per_int">
+            <label for="compravenda">Compravenda</label>
+            <input  id="compravenda" type="radio" name="Persona interessada o compravenda" value="compra">
+        <br>
+            <label for="nif/nie/Cif_comprador">NIF/NIE/CIF:</label>
+            <input id="nif/nie/Cif_comprador" type="text" name="nif/nie/cif_comprador">
+            <label for="nacimiento">Data de naixement (dd/mm/aaaa):</label>
+            <input id="nacimiento" type="date" name="nacimiento">
+            <label for="nom/rao_comprador">Nom/Raó social:</label>
+            <input id="nom/rao_comprador" type="text" name="nom/rao_comprador">
+        <br>
+            <label for="primer_cognom_comprador">Primer cognom:</label>
+            <input id="primer_cognom_comprador" type="text" name="apellido_1_comprador">
+            <label for="segon_cognom_comprador">Segon cognom:</label>
+            <input id="segon_cognom_comprador" type="text" name="apellido_2_comprador">
+        <br>
+            <label for="codigo_iae">Codi IAE (Impost d’Activitats Econòmiques):</label>
+            <input id="codigo_iae" type="text" name="codigo iae">
+            <label for="correo">Correu electrònic:</label>
+            <input id="correo" type="email" name="email">
+            <label for="telefono">Telèfon</label>
+            <input id="telefono" type="tel" name="telefono">
+        <br>
+            <p>Tutela</p>
+            <label for="menor">Menor d’edat</label>
+            <input id="menor" type="radio" name="tutela" value="menor">
+            <label for="altres_causes">Altres causes</label>
+            <input id="altres_causes" type="radio" name="tutela" value="altres_causes">
+
+            <label for="nif/nie_tutor">NIF/NIE del tutor:</label>
+            <input id="nif/nie_tutor" type="text" name="nif/nie tutuor">
+        <br>
+
+        <h4>DADES DEL VENEDOR/TRANSMISSOR</h4>
+
+            <label for="titular">Titular</label>
+            <input id="titular" type="radio" name="titular o posseidor" value="titular">
+            <label for="posseidor">Compravenda/Posseïdor/Arrendatari</label>
+            <input id="posseidor" type="radio" name="titular o posseidor" value="posseidor">
+        <br>
+            <label for="nif/nie/cif_venedor">NIF/NIE/CIF:</label>
+            <input id="nif/nie/cif_venedor" type="text" name="nif/nie/cif_comprador">
+            <label for="nom/rao_venedor">Nom/Raó social: </label>
+            <input id="nom/rao_venedor" type="text" name="nom/rao_venedor">
+        <br>
+            <label for="primer_cognom_venedor">Primer cognom: </label>
+            <input id="primer_cognom_venedor" type="text" name="primer_apellido_vendedor">
+            <label for="segon_cognom_venedor">Segon cognom:</label>
+            <input id="segon_cognom_venedor" type="text" name="segundo_apellido_vendedor">
+        <br>
+
+        <h4>ALTRES</h4>
+        
+            <label for="altres"></label>
+            <textarea id="altres" name="altres" rows="4" cols="100"></textarea>
+        <br>
+            <label for="foto">Foto del vehicle</label>
+            <input id="foto" type="file" name="foto">
+            <label for="color">Color del vehicle</label>
+            <input id="color" type="color" name="color">
+
+            <p>M’oposo a que la Direcció General de Trànsit consulti electrònicament les meves dades personals referides a</p>
+        <br>
+            <label for="empadronament">Empadronament</label>
+            <input id="empadronament" type="checkbox" name="Empadronament" value="Empadronament">
+            <label for="iae"> IAE</label>
+            <input id="iae" type="checkbox" name="IAE" value="IAE">
+            <label for="identitat">Identitat</label>
+            <input id="identitat" type="checkbox" name="Identitat" value="Identitat">
+        <br>
+            <label for="lugar"></label>
+            <input id="lugar" type="text" name="lugar firma">
+            <label for="fecha_firma">,</label>
+            <input id="fecha_firma" type="number" min="1" max="31" name="dia">
+            <label for="mes">d'/de</label>
+            <input id="mes" type="text" name="mes">
+            <label for="año">de</label>
+            <input id="año" type="number" min="2022" name="año">
+        <br>
+            <label for="enviar"></label>
+            <input id="enviar" type="submit" name="enviar">
+
+    </form>
+</body>
+</html>

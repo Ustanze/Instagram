@@ -1,0 +1,26 @@
+html{
+    font-size: 16px;
+}
+
+
+
+
+div, section{
+    font-size: 60px;
+}
+
+h1{
+
+    font-size: 2em;
+    color: red;
+}
+
+div p{
+    font-size: 2em;
+    color: blue;
+}
+
+section p{
+    font-size: 2rem;
+    color: green;
+}

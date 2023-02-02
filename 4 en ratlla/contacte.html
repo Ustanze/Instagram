@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacte</title>
+    
+</head>
+<body>
+    <form action="https://theteacher.codiblau.com/llmqs/practica/contacte" method="post" >
+
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name" minlength="2" maxlength="30" required>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="type">Tipos</label>
+        <select name="type" id="type">
+            <option value="CONSULTA">Consulta General</option>
+            <option value="ERROR">Error</option>
+            <option value="MILLORA">Mejoras</option>
+            <option value="SUBSCRIBE">Inscripcion Anual</option>
+        </select>
+
+        <label for="phone">Telefono</label>
+        <input type="tel" name="phone" id="phone">
+
+        <label for="birthday">Cumpleaños</label>
+        <input type="date" name="birthday" id="birthday">
+
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>

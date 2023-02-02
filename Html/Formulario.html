@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+    <form method="post">
+        <label for="nomcom">Nombre completo</label>
+        <input type="text" id="nomcom" name="nombrecompelto" placeholder="John Doe" value="Daniel Garcia">
+        <label for="colo"></label>
+        <input type="color" id="colo" name="colorfondo">
+        <label for="fecha"></label>
+        <input type="date" id="fecha" name="nacimiento">
+        <label for="mail"></label>
+        <input type="email" id="mail" name="correo">
+        <label for="archivo"></label>
+        <input type="file" id="archivo" name="foto">
+        <label for="contra"></label>
+        <input type="password" id="contra" name="contraseña">
+        <input type="hidden" name="hidden">
+        <input type="submit" value="enviar">
+        <label for="link"></label>
+        <input type="url" id="link" name="link">
+        <label for="telef"></label>
+        <input type="tel" id="telef" name="telefono">
+        <label for="años"></label>
+        <input type="number" id="años" name="edad" min="0" max="200">
+        <label for="pais"></label>
+        <select id="pais" name="pais">
+            <option value="al">Albania</option>
+            <option value="de">Alemania</option>
+            <option value="cn">Canada</option>
+            <option value="es" selected>España</option>
+            <option value="eu">Estados Unidos</option>
+            <option value="zb">Zimbawe</option>
+        </select>
+
+        <label for="coche">Elija un coche</label>
+        <select name="coche" id="coche">
+            <optgroup label="coche suizo">
+                <option value="volvo">volvo</option>
+                <option value="saab">saab</option>
+            </optgroup>
+            <optgroup label="coche español">
+                <option value="fiat">fiat</option>
+                <option value="seat">seat</option>
+            </optgroup>
+
+
+        </select>
+
+        <label for="buscador">elije un buscador
+        <input list="buscador" name="buscador">
+        <datalist id="buscador">
+            <option value="edge">
+            <option value="firefox">
+        </datalist>
+        </label>
+
+        <h2>Aficiones</h2>
+
+
+        <label for="nadar">Nadar</label>
+        <input id="nadar" type="checkbox" name="afiocion_nadar" value="Nadar">
+        <label for="correr"> Correr</label>
+        <input id="correr" type="checkbox" name="afiocion_correr" value="Correr">
+        <label for="leer">Leer</label>
+        <input id="leer" type="checkbox" name="afiocion_leer" value="Leer">
+
+
+        <h2>Sexo</h2>
+
+        <label for="h">Hombre</label>
+        <input id="h" type="radio" name="sexo" value="hombre"><br>
+        <label for="m">Mujer</label>
+        <input id="m" type="radio" name="sexo" value="mujer"><br>
+        <label for="o">Otro</label>
+        <input id="o" type="radio" name="sexo" value="otro"><br>
+        <label for="ns">No sabe</label>
+        <input id="ns" type="radio" name="sexo" value="no sabe"><br>
+
+    </form>
+</body>
+</html>

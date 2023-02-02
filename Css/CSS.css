@@ -1,0 +1,46 @@
+/* 1º Todos los enclaces de color rojo*/
+
+a {
+color: red;
+}
+/* 2º Todos los h4 de los articulos de color naranja menos el h4 hijo de la
+clase .sale de color verde  */
+
+article h4{
+    color: orange;
+}
+.sale h4{
+    color: green;
+}
+
+/* 3º Todos los enlaces que sean de un menu y que sean hijos directos de una
+lista (li), los pintaremos de color azul*/
+
+nav li>a{
+color: blue;
+}
+
+/* Menu, articulos y footer, color de fondo: amarillo */
+
+nav, article, footer{
+    background-color: yellow;
+}
+
+/*
+    Telefono de color naranja
+    Emails de color rosa
+  */
+
+a[href^="tel:"]{
+    color: orange;
+}
+
+a[href^="mailto:"]{
+    color: pink;
+}
+
+/* a que contiene la libra de gran bretaña de color lila*/
+header>nav:nth-child(2)>ul>li:nth-child(3)>a{
+    color: purple;
+}
+

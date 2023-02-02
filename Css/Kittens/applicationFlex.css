@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header.header{
+    background-color: red;
+
+    display:flex;
+    justify-content: center;
+}
+
+header.header > div.wrapper.clearfix{
+
+    width: 1200px;
+    background-color: yellow;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+header.header > div.wrapper.clearfix h1{
+
+    order: 1;
+}
+
+header.header > div.wrapper.clearfix nav{
+
+    order: 2;
+}
+
+header.header > div.wrapper.clearfix nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+div.content{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+
+}
+
+div.content>div.wrapper.clearfix{
+    width: 1200px;
+    background-color: pink;
+
+    display: flex;
+    flex-wrap: wrap;
+    /*flex-wrap solo funciona si los hijos tienen un tamaño */
+    justify-content: space-between;
+
+
+
+}
+
+div.content>div.wrapper.clearfix>form{
+    /*width: 50%*/
+    order: 2;
+}
+
+div.content>div.wrapper.clearfix>h1{
+   /*width: 50%;*/
+    order: 1;
+
+}
+
+div.content>div.wrapper.clearfix>ul{
+    width: 100%;
+    order: 3;
+
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;        /*para quitar los puntos*/
+
+
+}
+
+div.content>div.wrapper.clearfix>ul>li{
+
+    width: calc(25% - 20px);
+    background-color: green;
+    border: solid 1px black;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+
+
